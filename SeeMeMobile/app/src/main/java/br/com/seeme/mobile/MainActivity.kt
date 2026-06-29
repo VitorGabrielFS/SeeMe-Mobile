@@ -62,8 +62,9 @@ class MainActivity : ComponentActivity() {
         try {
             helper = HandLandmarkerHelper(this)
         } catch (error: Throwable) {
-            showMessage("Modelo nao encontrado. Rode tools/download-models.ps1")
-            statusText.text = "Modelo MediaPipe ausente"
+            error.printStackTrace()
+            showMessage("Erro no modelo")
+            statusText.text = error.message ?: error.toString()
         }
     }
 
