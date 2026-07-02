@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="accessibility_description">Controle o celular com rastreamento ocular, piscadas e botoes flutuantes do SeeMe.</string>
+    <string name="app_name">SeeMe Mobile</string>
     <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
         <item name="android:fontFamily">sans</item>
         <item name="android:windowLightStatusBar">true</item>

@@ -60,6 +60,10 @@ class MainActivity : ComponentActivity() {
         ActivityResultContracts.RequestPermission()
     ) { }
 
+    private val requestAudio = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) { }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         buildLayout()
@@ -292,6 +296,7 @@ class MainActivity : ComponentActivity() {
                 <section>
                   <button onclick="SeeMe.openCamera()">Abrir camera</button>
                   <button onclick="SeeMe.openAccessibility()">Ativar acessibilidade</button>
+                  <button onclick="SeeMe.requestAudioPermission()">Permitir microfone</button>
                   <button onclick="SeeMe.requestNotificationPermission()">Permitir notificacoes</button>
                 </section>
                 <section>
@@ -346,6 +351,11 @@ class MainActivity : ComponentActivity() {
         }
 
         @JavascriptInterface
+        fun requestAudioPermission() {
+            runOnUiThread { requestAudioPermissionIfNeeded() }
+        }
+
+        @JavascriptInterface
         fun addShortcut(fingersRaw: String, name: String, typeRaw: String, value: String) {
             val fingers = fingersRaw.toIntOrNull()
             if (fingers == null || fingers !in 1..5 || name.isBlank()) {
@@ -368,6 +378,7 @@ class MainActivity : ComponentActivity() {
 
     private fun openAccessibilitySettings() {
         ensureCameraPermissionOnly()
+        requestAudioPermissionIfNeeded()
         requestNotificationPermissionIfNeeded()
         startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
         showMessage("Ative: SeeMe Controle por Olhos")
@@ -384,6 +395,12 @@ class MainActivity : ComponentActivity() {
             ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
         ) {
             requestNotifications.launch(Manifest.permission.POST_NOTIFICATIONS)
+        }
+    }
+
+    private fun requestAudioPermissionIfNeeded() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            requestAudio.launch(Manifest.permission.RECORD_AUDIO)
         }
     }
 }

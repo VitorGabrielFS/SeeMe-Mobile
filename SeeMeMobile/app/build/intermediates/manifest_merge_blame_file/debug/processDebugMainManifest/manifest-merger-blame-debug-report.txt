@@ -9,172 +9,210 @@
 9        android:targetSdkVersion="36" />
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:3:5-65
-11-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:3:22-62
+11-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:3:5-65
+11-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:3:22-62
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:4:5-67
-12-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:4:22-64
-13
-14    <uses-feature
-14-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:5:5-88
-15        android:name="android.hardware.camera.any"
-15-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:5:19-61
-16        android:required="true" />
-16-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:5:62-85
+12-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:4:5-67
+12-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:5:5-71
+13-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:5:22-68
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:6:5-77
+14-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:6:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+15-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:7:5-84
+15-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:7:22-81
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:8:5-77
+16-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:8:22-74
 17
-18    <permission
-18-->[androidx.core:core:1.18.0] C:\Users\User\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:22:5-24:47
-19        android:name="br.com.seeme.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-19-->[androidx.core:core:1.18.0] C:\Users\User\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:23:9-81
-20        android:protectionLevel="signature" />
-20-->[androidx.core:core:1.18.0] C:\Users\User\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:24:9-44
+18    <uses-feature
+18-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:9:5-88
+19        android:name="android.hardware.camera.any"
+19-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:9:19-61
+20        android:required="true" />
+20-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:9:62-85
 21
-22    <uses-permission android:name="br.com.seeme.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-22-->[androidx.core:core:1.18.0] C:\Users\User\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:26:5-97
-22-->[androidx.core:core:1.18.0] C:\Users\User\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:26:22-94
-23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-23-->[androidx.media3:media3-common:1.9.0] C:\Users\User\.gradle\caches\9.3.0\transforms\6e43cc01c3b138e3733331ce0eef53e0\workspace\transformed\media3-common-1.9.0\AndroidManifest.xml:22:5-79
-23-->[androidx.media3:media3-common:1.9.0] C:\Users\User\.gradle\caches\9.3.0\transforms\6e43cc01c3b138e3733331ce0eef53e0\workspace\transformed\media3-common-1.9.0\AndroidManifest.xml:22:22-76
-24
-25    <application
-25-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:7:5-22:19
-26        android:allowBackup="true"
-26-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:8:9-35
-27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.18.0] C:\Users\User\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:28:18-86
-28        android:debuggable="true"
-29        android:extractNativeLibs="false"
-30        android:hardwareAccelerated="true"
-30-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:9:9-43
-31        android:label="SeeMe Mobile"
-31-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:10:9-37
-32        android:supportsRtl="true"
-32-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:11:9-35
-33        android:testOnly="true"
-34        android:theme="@style/AppTheme" >
-34-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:12:9-40
-35        <activity
-35-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:13:9-21:20
-36            android:name="br.com.seeme.mobile.MainActivity"
-36-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:14:13-41
-37            android:configChanges="orientation|screenSize|keyboardHidden"
-37-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:15:13-74
-38            android:exported="true" >
-38-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:16:13-36
-39            <intent-filter>
-39-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:17:13-20:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:18:17-69
-40-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:18:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:19:17-77
-42-->C:\Users\User\Documents\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:19:27-74
-43            </intent-filter>
-44        </activity>
-45        <!--
-46        Service for holding metadata. Cannot be instantiated.
-47        Metadata will be merged from other manifests.
-48        -->
+22    <permission
+22-->[androidx.core:core:1.18.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:22:5-24:47
+23        android:name="br.com.seeme.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.18.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.18.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="br.com.seeme.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.18.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.18.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:26:22-94
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->[androidx.media3:media3-common:1.9.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\6e43cc01c3b138e3733331ce0eef53e0\workspace\transformed\media3-common-1.9.0\AndroidManifest.xml:22:5-79
+27-->[androidx.media3:media3-common:1.9.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\6e43cc01c3b138e3733331ce0eef53e0\workspace\transformed\media3-common-1.9.0\AndroidManifest.xml:22:22-76
+28
+29    <application
+29-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:11:5-40:19
+30        android:allowBackup="true"
+30-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:12:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.18.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\5870a38561129e95f9d1a4f795394da2\workspace\transformed\core-1.18.0\AndroidManifest.xml:28:18-86
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:hardwareAccelerated="true"
+34-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:13:9-43
+35        android:label="SeeMe Mobile"
+35-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:14:9-37
+36        android:supportsRtl="true"
+36-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:15:9-35
+37        android:theme="@style/AppTheme" >
+37-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:16:9-40
+38        <activity
+38-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:17:9-25:20
+39            android:name="br.com.seeme.mobile.MainActivity"
+39-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:18:13-41
+40            android:configChanges="orientation|screenSize|keyboardHidden"
+40-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:19:13-74
+41            android:exported="true" >
+41-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:20:13-36
+42            <intent-filter>
+42-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:21:13-24:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:22:17-69
+43-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:22:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:23:17-77
+45-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:23:27-74
+46            </intent-filter>
+47        </activity>
+48
 49        <service
-49-->[androidx.camera:camera-core:1.6.1] C:\Users\User\.gradle\caches\9.3.0\transforms\2266285e19e2954013c80c8fac3c81f5\workspace\transformed\camera-core-1.6.1\AndroidManifest.xml:29:9-33:78
-50            android:name="androidx.camera.core.impl.MetadataHolderService"
-50-->[androidx.camera:camera-core:1.6.1] C:\Users\User\.gradle\caches\9.3.0\transforms\2266285e19e2954013c80c8fac3c81f5\workspace\transformed\camera-core-1.6.1\AndroidManifest.xml:30:13-75
-51            android:enabled="false"
-51-->[androidx.camera:camera-core:1.6.1] C:\Users\User\.gradle\caches\9.3.0\transforms\2266285e19e2954013c80c8fac3c81f5\workspace\transformed\camera-core-1.6.1\AndroidManifest.xml:31:13-36
-52            android:exported="false" >
-52-->[androidx.camera:camera-core:1.6.1] C:\Users\User\.gradle\caches\9.3.0\transforms\2266285e19e2954013c80c8fac3c81f5\workspace\transformed\camera-core-1.6.1\AndroidManifest.xml:32:13-37
-53            <meta-data
-53-->[androidx.camera:camera-camera2:1.6.1] C:\Users\User\.gradle\caches\9.3.0\transforms\6178a13e127df9a32c92c0a6dd75b2e8\workspace\transformed\camera-camera2-1.6.1\AndroidManifest.xml:30:13-32:89
-54                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-54-->[androidx.camera:camera-camera2:1.6.1] C:\Users\User\.gradle\caches\9.3.0\transforms\6178a13e127df9a32c92c0a6dd75b2e8\workspace\transformed\camera-camera2-1.6.1\AndroidManifest.xml:31:17-103
-55                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-55-->[androidx.camera:camera-camera2:1.6.1] C:\Users\User\.gradle\caches\9.3.0\transforms\6178a13e127df9a32c92c0a6dd75b2e8\workspace\transformed\camera-camera2-1.6.1\AndroidManifest.xml:32:17-86
-56        </service>
-57
-58        <provider
-58-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
-59            android:name="androidx.startup.InitializationProvider"
-59-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:25:13-67
-60            android:authorities="br.com.seeme.mobile.androidx-startup"
-60-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:26:13-68
-61            android:exported="false" >
-61-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:27:13-37
-62            <meta-data
-62-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-63                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-63-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-64                android:value="androidx.startup" />
-64-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-65        </provider>
-66
-67        <receiver
-67-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-68            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-68-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-69            android:directBootAware="false"
-69-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-70            android:enabled="true"
-70-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-71            android:exported="true"
-71-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-72            android:permission="android.permission.DUMP" >
-72-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-73            <intent-filter>
-73-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-74                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-74-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-74-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-75            </intent-filter>
-76            <intent-filter>
-76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-77                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-78            </intent-filter>
-79            <intent-filter>
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-80                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-80-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-80-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-81            </intent-filter>
-82            <intent-filter>
-82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-83                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-84            </intent-filter>
-85        </receiver>
-86
-87        <service
-87-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
-88            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-88-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
-89            android:exported="false" >
-89-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
-90            <meta-data
-90-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
-91                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-91-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
-92                android:value="cct" />
-92-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
-93        </service>
-94        <service
-94-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
-95            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-95-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
-96            android:exported="false"
-96-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
-97            android:permission="android.permission.BIND_JOB_SERVICE" >
-97-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
-98        </service>
-99
-100        <receiver
-100-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
-101            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-101-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
-102            android:exported="false" />
-102-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\User\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
-103    </application>
+49-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:27:9-39:19
+50            android:name="br.com.seeme.mobile.SeeMeAccessibilityService"
+50-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:28:13-54
+51            android:exported="true"
+51-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:29:13-36
+52            android:foregroundServiceType="camera"
+52-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:30:13-51
+53            android:label="SeeMe Controle por Olhos"
+53-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:31:13-53
+54            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+54-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:32:13-79
+55            <intent-filter>
+55-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:33:13-35:29
+56                <action android:name="android.accessibilityservice.AccessibilityService" />
+56-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:34:17-92
+56-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:34:25-89
+57            </intent-filter>
+58
+59            <meta-data
+59-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:36:13-38:71
+60                android:name="android.accessibilityservice"
+60-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:37:17-60
+61                android:resource="@xml/seeme_accessibility_service" />
+61-->C:\Users\gabri\Downloads\SeeMe-Mobile\SeeMeMobile\app\src\main\AndroidManifest.xml:38:17-68
+62        </service>
+63        <!--
+64        Service for holding metadata. Cannot be instantiated.
+65        Metadata will be merged from other manifests.
+66        -->
+67        <service
+67-->[androidx.camera:camera-core:1.6.1] C:\Users\gabri\.gradle\caches\9.3.0\transforms\2266285e19e2954013c80c8fac3c81f5\workspace\transformed\camera-core-1.6.1\AndroidManifest.xml:29:9-33:78
+68            android:name="androidx.camera.core.impl.MetadataHolderService"
+68-->[androidx.camera:camera-core:1.6.1] C:\Users\gabri\.gradle\caches\9.3.0\transforms\2266285e19e2954013c80c8fac3c81f5\workspace\transformed\camera-core-1.6.1\AndroidManifest.xml:30:13-75
+69            android:enabled="false"
+69-->[androidx.camera:camera-core:1.6.1] C:\Users\gabri\.gradle\caches\9.3.0\transforms\2266285e19e2954013c80c8fac3c81f5\workspace\transformed\camera-core-1.6.1\AndroidManifest.xml:31:13-36
+70            android:exported="false" >
+70-->[androidx.camera:camera-core:1.6.1] C:\Users\gabri\.gradle\caches\9.3.0\transforms\2266285e19e2954013c80c8fac3c81f5\workspace\transformed\camera-core-1.6.1\AndroidManifest.xml:32:13-37
+71            <meta-data
+71-->[androidx.camera:camera-camera2:1.6.1] C:\Users\gabri\.gradle\caches\9.3.0\transforms\6178a13e127df9a32c92c0a6dd75b2e8\workspace\transformed\camera-camera2-1.6.1\AndroidManifest.xml:30:13-32:89
+72                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+72-->[androidx.camera:camera-camera2:1.6.1] C:\Users\gabri\.gradle\caches\9.3.0\transforms\6178a13e127df9a32c92c0a6dd75b2e8\workspace\transformed\camera-camera2-1.6.1\AndroidManifest.xml:31:17-103
+73                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+73-->[androidx.camera:camera-camera2:1.6.1] C:\Users\gabri\.gradle\caches\9.3.0\transforms\6178a13e127df9a32c92c0a6dd75b2e8\workspace\transformed\camera-camera2-1.6.1\AndroidManifest.xml:32:17-86
+74        </service>
+75
+76        <provider
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:25:13-67
+78            android:authorities="br.com.seeme.mobile.androidx-startup"
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:26:13-68
+79            android:exported="false" >
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:27:13-37
+80            <meta-data
+80-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+82                android:value="androidx.startup" />
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+83        </provider>
+84
+85        <receiver
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+87            android:directBootAware="false"
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+88            android:enabled="true"
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+89            android:exported="true"
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+90            android:permission="android.permission.DUMP" >
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+95                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+98                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+101                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\25813fe952732e2352013dcc8c7e2bfc\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+102            </intent-filter>
+103        </receiver>
 104
-105</manifest>
+105        <service
+105-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
+106            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+106-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
+107            android:exported="false" >
+107-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
+108            <meta-data
+108-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
+109                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+109-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
+110                android:value="cct" />
+110-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\1ee42896d0ee35dc1d902a71284b108d\workspace\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
+111        </service>
+112        <service
+112-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
+113            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+113-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
+114            android:exported="false"
+114-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
+115            android:permission="android.permission.BIND_JOB_SERVICE" >
+115-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
+116        </service>
+117
+118        <receiver
+118-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
+119            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+119-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
+120            android:exported="false" />
+120-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\gabri\.gradle\caches\9.3.0\transforms\eefb5e1c77774cd598f53734be27c031\workspace\transformed\transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
+121    </application>
+122
+123</manifest>

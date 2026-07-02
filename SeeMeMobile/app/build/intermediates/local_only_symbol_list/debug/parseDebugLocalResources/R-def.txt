@@ -1,3 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+drawable cursor_ring
+string accessibility_description
+string app_name
 style AppTheme
+xml seeme_accessibility_service

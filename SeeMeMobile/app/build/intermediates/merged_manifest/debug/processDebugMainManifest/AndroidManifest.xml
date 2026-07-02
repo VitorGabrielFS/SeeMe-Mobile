@@ -10,6 +10,10 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <uses-feature
         android:name="android.hardware.camera.any"
@@ -30,7 +34,6 @@
         android:hardwareAccelerated="true"
         android:label="SeeMe Mobile"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="br.com.seeme.mobile.MainActivity"
@@ -42,6 +45,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="br.com.seeme.mobile.SeeMeAccessibilityService"
+            android:exported="true"
+            android:foregroundServiceType="camera"
+            android:label="SeeMe Controle por Olhos"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/seeme_accessibility_service" />
+        </service>
         <!--
         Service for holding metadata. Cannot be instantiated.
         Metadata will be merged from other manifests.

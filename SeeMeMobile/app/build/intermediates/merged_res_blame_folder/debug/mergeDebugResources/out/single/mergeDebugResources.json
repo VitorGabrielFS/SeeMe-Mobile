@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "br.com.seeme.mobile.app-debug-36:/xml_seeme_accessibility_service.xml.flat",
+        "source": "br.com.seeme.mobile.app-main-38:/xml/seeme_accessibility_service.xml"
+    },
+    {
+        "merged": "br.com.seeme.mobile.app-debug-36:/drawable_cursor_ring.xml.flat",
+        "source": "br.com.seeme.mobile.app-main-38:/drawable/cursor_ring.xml"
+    }
+]
