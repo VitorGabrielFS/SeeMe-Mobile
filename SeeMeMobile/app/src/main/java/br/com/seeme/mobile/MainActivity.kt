@@ -6,8 +6,10 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.SystemClock
+import android.provider.Settings
 import android.view.Gravity
 import android.view.View
 import android.webkit.JavascriptInterface
@@ -54,6 +56,10 @@ class MainActivity : ComponentActivity() {
         if (granted) startCamera() else showMessage("Permissao de camera negada")
     }
 
+    private val requestNotifications = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) { }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         buildLayout()
@@ -62,9 +68,8 @@ class MainActivity : ComponentActivity() {
         try {
             helper = HandLandmarkerHelper(this)
         } catch (error: Throwable) {
-            error.printStackTrace()
-            showMessage("Erro no modelo")
-            statusText.text = error.message ?: error.toString()
+            showMessage("Modelo nao encontrado. Rode tools/download-models.ps1")
+            statusText.text = "Modelo MediaPipe ausente"
         }
     }
 
@@ -88,8 +93,10 @@ class MainActivity : ComponentActivity() {
 
         val webButton = navButton("Web") { showWeb() }
         val cameraButton = navButton("Camera") { ensureCameraPermission() }
+        val accessButton = navButton("Acessibilidade") { openAccessibilitySettings() }
         toolbar.addView(webButton, LinearLayout.LayoutParams(0, 52, 1f))
         toolbar.addView(cameraButton, LinearLayout.LayoutParams(0, 52, 1f))
+        toolbar.addView(accessButton, LinearLayout.LayoutParams(0, 52, 1f))
 
         webView = WebView(this)
         previewView = PreviewView(this).apply {
@@ -279,11 +286,13 @@ class MainActivity : ComponentActivity() {
             <body>
               <header>
                 <h1>SeeMe Mobile</h1>
-                <div class="hint">WebView local integrada com controle por gestos.</div>
+                <div class="hint">Ative o servico de acessibilidade para usar o popup e o controle ocular em todos os apps.</div>
               </header>
               <main>
                 <section>
                   <button onclick="SeeMe.openCamera()">Abrir camera</button>
+                  <button onclick="SeeMe.openAccessibility()">Ativar acessibilidade</button>
+                  <button onclick="SeeMe.requestNotificationPermission()">Permitir notificacoes</button>
                 </section>
                 <section>
                   <h2>Novo atalho</h2>
@@ -327,6 +336,16 @@ class MainActivity : ComponentActivity() {
         }
 
         @JavascriptInterface
+        fun openAccessibility() {
+            runOnUiThread { openAccessibilitySettings() }
+        }
+
+        @JavascriptInterface
+        fun requestNotificationPermission() {
+            runOnUiThread { requestNotificationPermissionIfNeeded() }
+        }
+
+        @JavascriptInterface
         fun addShortcut(fingersRaw: String, name: String, typeRaw: String, value: String) {
             val fingers = fingersRaw.toIntOrNull()
             if (fingers == null || fingers !in 1..5 || name.isBlank()) {
@@ -345,5 +364,26 @@ class MainActivity : ComponentActivity() {
 
     private fun showMessage(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    private fun openAccessibilitySettings() {
+        ensureCameraPermissionOnly()
+        requestNotificationPermissionIfNeeded()
+        startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+        showMessage("Ative: SeeMe Controle por Olhos")
+    }
+
+    private fun ensureCameraPermissionOnly() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            requestCamera.launch(Manifest.permission.CAMERA)
+        }
+    }
+
+    private fun requestNotificationPermissionIfNeeded() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+            ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
+        ) {
+            requestNotifications.launch(Manifest.permission.POST_NOTIFICATIONS)
+        }
     }
 }

@@ -6,6 +6,7 @@ plugins {
 android {
     namespace = "br.com.seeme.mobile"
     compileSdk = 36
+    buildToolsVersion = "36.0.0"
 
     defaultConfig {
         applicationId = "br.com.seeme.mobile"
@@ -34,5 +35,6 @@ dependencies {
     implementation("androidx.camera:camera-lifecycle:1.6.1")
     implementation("androidx.camera:camera-view:1.6.1")
     implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.4")
     implementation("com.google.mediapipe:tasks-vision:0.10.35")
 }
