@@ -114,7 +114,8 @@ class SeeMeAccessibilityService : AccessibilityService(), LifecycleOwner {
             setPadding(12, 12, 12, 12)
             setBackgroundColor(Color.argb(230, 18, 24, 33))
             addView(panelButton("Olhos", if (eyeEnabled) "#00C853" else "#FFFFFF") { toggleEyeTracking() })
-            addView(panelButton("Voz", if (voiceEnabled) "#00C853" else "#FFFFFF") { toggleVoice() })
+            addView(panelButton(if (voiceEnabled) "Voz ON" else "Voz OFF", if (voiceEnabled) "#00C853" else "#FFFFFF") { toggleVoice() })
+            addView(panelButton("Ouvir", "#FFFFFF") { listenCommandNow() })
             addView(panelButton("Calibrar", "#FFFFFF") { faceHelper?.recalibrate() })
             addView(panelButton("Clique", "#FFFFFF") { tapAtCursor() })
             addView(panelButton("Voltar", "#FFFFFF") { performGlobalAction(GLOBAL_ACTION_BACK) })
@@ -169,6 +170,14 @@ class SeeMeAccessibilityService : AccessibilityService(), LifecycleOwner {
 
     private fun toggleVoice() {
         if (voiceEnabled) stopVoice() else startVoice()
+        refreshPanel()
+    }
+
+    private fun listenCommandNow() {
+        if (!voiceEnabled) startVoice()
+        voiceMode = VoiceMode.Command
+        speak("Pode falar.")
+        restartListening(250L)
         refreshPanel()
     }
 
@@ -283,7 +292,7 @@ class SeeMeAccessibilityService : AccessibilityService(), LifecycleOwner {
         if (normalized.isBlank()) return
 
         if (voiceMode == VoiceMode.WakeWord) {
-            if (normalized.contains("bruna")) {
+            if (isWakeWord(normalized)) {
                 voiceMode = VoiceMode.Command
                 speak("Ouvindo.")
                 restartListening(250L)
@@ -337,6 +346,15 @@ class SeeMeAccessibilityService : AccessibilityService(), LifecycleOwner {
         }
 
         if (voiceEnabled) restartListening(700L)
+    }
+
+    private fun isWakeWord(text: String): Boolean {
+        val compact = text
+            .lowercase(Locale("pt", "BR"))
+            .replace(Regex("[^a-zà-ú ]"), " ")
+            .replace(Regex("\\s+"), " ")
+            .trim()
+        return listOf("bruna", "brunna", "bruna", "bruma", "bruna oi", "oi bruna").any { compact.contains(it) }
     }
 
     private fun openKnownAppOrSearch(target: String) {
@@ -534,7 +552,7 @@ class SeeMeAccessibilityService : AccessibilityService(), LifecycleOwner {
             val matches = partialResults
                 ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
                 .orEmpty()
-            if (matches.any { it.lowercase(Locale("pt", "BR")).contains("bruna") }) {
+            if (matches.any { isWakeWord(it) }) {
                 handleVoiceText("bruna")
             }
         }
